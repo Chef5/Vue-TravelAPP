@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="title">
-            猜你喜欢
+            <span class="t-font heart">&#xe757;</span> 猜你喜欢
         </div>
         <ul>
             <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
@@ -40,6 +40,8 @@
         line-height 40px
         background #eee
         text-indent 10px
+        .heart
+            color red
     .item
         overflow hidden
         display flex
