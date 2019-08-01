@@ -1,10 +1,10 @@
 <template>
     <div>
         <div class="title">
-            猜你喜欢
+            <span class="t-font heart">&#xe757;</span> 猜你喜欢
         </div>
         <ul>
-            <li class="item border-bottom" v-for="item of reconmendList" :key="item.id">
+            <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
                 <img :src="item.imgUrl" alt="" class="item-img">
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -19,22 +19,15 @@
 <script>
     export default {
         name: "homeRecommend",
+        props: {
+            recommendList: {
+                type: Array,
+                default: []
+            }
+        },
         data () {
             return {
-               reconmendList: [
-                   {
-                       id: '0001',
-                       imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-                       title: '北京欢乐谷',
-                       desc: '好玩好玩好玩好玩好玩好玩好玩好玩好玩玩好玩好玩好玩好玩好玩好玩'
-                   },
-                   {
-                       id: '0002',
-                       imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-                       title: '北京欢乐谷',
-                       desc: '好玩好玩好玩好玩好玩好玩好玩好玩好玩玩好玩好玩好玩好玩好玩好玩'
-                   }
-               ]
+
             }
         }
     }
@@ -47,6 +40,8 @@
         line-height 40px
         background #eee
         text-indent 10px
+        .heart
+            color red
     .item
         overflow hidden
         display flex
