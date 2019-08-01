@@ -1,0 +1,95 @@
+{
+  "status": true,
+  "data": {
+    "city": "大连",
+    "swiperList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/ae8987bff39ff10e82675a3643154e66.jpg_750x200_0f187b2e.jpg"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/9655dd361658cc55ec5bc9280ab3e706.jpg_750x200_6a12f192.jpg"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/ae29208de0e5aaa11964bdcaf198930d.jpg_750x200_05ab4be2.jpg"
+      }
+    ],
+    "iconList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+        "desc": "大连圣亚"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/67370daeaa1a8ac24a6c7930f74fee0c.png",
+        "desc": "发现王国"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+        "desc": "老虎滩夜场"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/b71c1387a921ccf9c6edc7e8def3da90.png",
+        "desc": "森林动物园"
+      },
+      {
+        "id": "0006",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/3a0879f224e0aca97843bff78cabac3a.png",
+        "desc": "大连必游"
+      },
+      {
+        "id": "0007",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "desc": "沈阳必游"
+      },
+      {
+        "id": "0008",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/f04285731d7121da1b9028e2bf431695.png",
+        "desc": "丹东山水"
+      },
+      {
+        "id": "0009",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png",
+        "desc": "暑期聚惠"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "北京欢乐谷",
+        "desc": "好玩好玩好玩好玩好玩好玩好玩好玩好玩玩好玩好玩好玩好玩好玩好玩"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "北京欢乐谷",
+        "desc": "好玩好玩好玩好玩好玩好玩好玩好玩好玩玩好玩好玩好玩好玩好玩好玩"
+      }
+    ],
+    "weekendList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/53/02091f1ee43d0a.jpg_r_640x214_2e3256b1.jpg",
+        "title": "北京清凉避暑胜地",
+        "desc": "到大自然中享受“天然空调”的清凉"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+        "title": "帝都必打卡",
+        "desc": "来北京必去的景点非这些地方莫属"
+      }
+    ]
+  }
+}
