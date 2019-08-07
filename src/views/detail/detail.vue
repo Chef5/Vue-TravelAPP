@@ -42,7 +42,7 @@
                     this.sightName = data.sightName
                     this.bannerImg = data.bannerImg
                     this.gallaryImgs = data.gallaryImgs
-                    this.list = data.catagoryList
+                    this.list = data.categoryList
                 }
             }
         },
