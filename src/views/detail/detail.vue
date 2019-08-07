@@ -1,6 +1,6 @@
 <template>
     <div>
-        <detail-banner></detail-banner>
+        <detail-banner :sightName="sightName" :bannerImg="bannerImg" :gallaryImgs="gallaryImgs"></detail-banner>
         <detail-header></detail-header>
         <detail-list :list="list"></detail-list>
         <div class="content"></div>
@@ -11,6 +11,7 @@
     import DetailBanner from './components/banner'
     import DetailHeader from './components/header'
     import DetailList from './components/list'
+    import axios from 'axios'
     export default {
         name: "detail",
         components: {
@@ -20,38 +21,35 @@
         },
         data () {
             return {
-                list: [
-                    {
-                        title: '成人票',
-                        children: [
-                            {
-                                title: '成人三馆联票'
-                            },
-                            {
-                                title: '成人五馆联票',
-                                children: [
-                                    {
-                                        title: '五馆全票'
-                                    },
-                                    {
-                                        title: '五馆团体'
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        title: '学生票'
-                    },
-                    {
-                        title: '儿童票'
-                    },
-                    {
-                        title: '特惠票'
-                    },
-                ]
+                sightName: "",
+                bannerImg: "",
+                gallaryImgs: [],
+                list: []
             }
+        },
+        methods: {
+            geDetailInfo () {
+                axios.get("/api/detail.json?",{
+                    params: {
+                        id: this.$route.params.id
+                    }
+                }).then(this.handleGetDetailSuccess)
+            },
+            handleGetDetailSuccess (res) {
+                res = res.data
+                if(res.status){
+                    const data = res.data
+                    this.sightName = data.sightName
+                    this.bannerImg = data.bannerImg
+                    this.gallaryImgs = data.gallaryImgs
+                    this.list = data.catagoryList
+                }
+            }
+        },
+        mounted() {
+            this.geDetailInfo()
         }
+
     }
 </script>
 

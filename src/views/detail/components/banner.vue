@@ -1,16 +1,16 @@
 <template>
     <div>
         <div class="banner" @click="handleBannerClick">
-            <img src="http://img1.qunarzz.com/sight/p0/1808/ae/aee4ea6935c01799a3.water.jpg_350x240_6be0dee0.jpg" alt="" class="banner-img">
+            <img :src="bannerImg" alt="" class="banner-img">
             <div class="banner-info">
-                <div class="banner-title">海昌发现王国</div>
+                <div class="banner-title">{{sightName}}</div>
                 <div class="banner-number">
                     <span class="t-font banner-icon">&#xe65f;</span>
                     39
                 </div>
             </div>
         </div>
-        <Gallary :imgs="imgs" @close="handleGallaryClose" v-show="showGallary"></Gallary>
+        <Gallary :imgs="gallaryImgs" @close="handleGallaryClose" v-show="showGallary"></Gallary>
     </div>
 </template>
 
@@ -21,13 +21,25 @@
         components: {
             Gallary
         },
+        props: {
+            sightName: {
+                type: String,
+                default: "暂无景点"
+            },
+            bannerImg: {
+                type: String,
+                default: "null.jpg"
+            },
+            gallaryImgs: {
+                type: Array,
+                default () {
+                    return []
+                }
+            }
+        },
         data () {
             return {
-                showGallary: false,
-                imgs: [
-                    "http://img1.qunarzz.com/sight/p0/1808/ae/aee4ea6935c01799a3.water.jpg_350x240_6be0dee0.jpg",
-                    "http://img1.qunarzz.com/sight/p0/1808/9a/9a8af6afcbf2e4e2a3.water.jpg_350x240_b9773ca5.jpg"
-                ]
+                showGallary: false
             }
         },
         methods: {

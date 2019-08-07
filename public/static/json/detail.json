@@ -1,0 +1,38 @@
+{
+  "status": true,
+  "data":{
+    "sightName": "海昌发现王国",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1808/ae/aee4ea6935c01799a3.water.jpg_350x240_6be0dee0.jpg",
+    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1808/ae/aee4ea6935c01799a3.water.jpg_350x240_6be0dee0.jpg", "http://img1.qunarzz.com/sight/p0/1808/9a/9a8af6afcbf2e4e2a3.water.jpg_350x240_b9773ca5.jpg"],
+    "catagoryList": [
+      {
+        "title": "成人票",
+        "children": [
+          {
+            "title": "成人三馆联票"
+          },
+          {
+            "title": "成人五馆联票",
+            "children": [
+              {
+                "title": "五馆全票"
+              },
+              {
+                "title": "五馆团体"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "学生票"
+      },
+      {
+        "title": "儿童票"
+      },
+      {
+        "title": "特惠票"
+      }
+    ]
+  }
+}
