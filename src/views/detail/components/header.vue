@@ -62,6 +62,7 @@
         text-align: center;
     }
     .header-fixed{
+        z-index: 2;
         position: fixed;
         top: 0px;
         left: 0px;
