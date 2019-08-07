@@ -1,11 +1,13 @@
 <template>
-    <div class="banner" @click="handleBannerClick">
-        <img src="http://img1.qunarzz.com/sight/p0/1808/ae/aee4ea6935c01799a3.water.jpg_350x240_6be0dee0.jpg" alt="" class="banner-img">
-        <div class="banner-info">
-            <div class="banner-title">海昌发现王国</div>
-            <div class="banner-number">
-                <span class="t-font banner-icon">&#xe65f;</span>
-                39
+    <div>
+        <div class="banner" @click="handleBannerClick">
+            <img src="http://img1.qunarzz.com/sight/p0/1808/ae/aee4ea6935c01799a3.water.jpg_350x240_6be0dee0.jpg" alt="" class="banner-img">
+            <div class="banner-info">
+                <div class="banner-title">海昌发现王国</div>
+                <div class="banner-number">
+                    <span class="t-font banner-icon">&#xe65f;</span>
+                    39
+                </div>
             </div>
         </div>
         <Gallary :imgs="imgs" @close="handleGallaryClose" v-show="showGallary"></Gallary>
