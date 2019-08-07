@@ -73,7 +73,7 @@
             bottom 0
             line-height 30px
             color #fff
-            background-image linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.8))
+            background-image linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.8))
             .banner-title
                 flex 1
                 font-size 16px
